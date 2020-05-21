@@ -27,9 +27,15 @@
     L.marker([54.444923, 18.553375]).addTo(mymap)
         .bindPopup("<b>Centrum dydaktyczne</b><br> Uniwersytet Gdański").openPopup();
 
+	L.circle([54.444952, 18.557653], 50, {
+		color: 'red',
+		fillColor: '#f03',
+		fillOpacity: 0.5
+	}).addTo(mymap).bindPopup("Posterunek policji");
+
 
 	var popup = L.popup();
-	
+
 	function onMapClick(e) {
 		popup
 			.setLatLng(e.latlng)
