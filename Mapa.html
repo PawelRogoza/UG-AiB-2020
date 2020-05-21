@@ -20,6 +20,15 @@
 		id: 'mapbox.streets'
 	}).addTo(mymap);
 
+	L.marker([54.442698, 18.555829]).addTo(mymap)
+		.bindPopup("<b>Wydział zarządzania</b><br />Uniwersytet Gdański").openPopup();
+    L.marker([54.444857, 18.555301]).addTo(mymap)
+        .bindPopup("<b>Wydział ekonomiczny</b><br> Uniwersytet Gdański").openPopup();
+    L.marker([54.444923, 18.553375]).addTo(mymap)
+        .bindPopup("<b>Centrum dydaktyczne</b><br> Uniwersytet Gdański").openPopup();
+
+
+	var popup = L.popup();
 	
 	function onMapClick(e) {
 		popup
