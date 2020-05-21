@@ -1,0 +1,25 @@
+
+<!DOCTYPE html>
+<html>
+<head></head>
+<body>
+<label for="n">Podaj liczbę:</label>
+<input type="text" id="n">
+<input type="submit" onclick="Skrypt3()" value="Check">
+<div id="WynikSkrypt3"></div>
+<script>
+    function Skrypt3() {
+        var pierwsza = 0;
+        var druga = 1;
+        var suma;
+        var n = document.getElementById("n").value;
+        for (var i = 2; i <= n; i++) {
+            suma = pierwsza + druga;
+            pierwsza = druga;
+            druga = suma;
+        }
+        WynikSkrypt3.innerHTML = suma;
+    }
+</script>
+</body>
+</html>

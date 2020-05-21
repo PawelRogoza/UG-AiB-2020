@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+<html>
+    <head></head>
+<body>
+<div id="strona">
+    <h1>Dane</h1>
+    <form id="form">
+        Pierwsza liczbaa<input type="number" id="pierwsza" min="-9" max="9"><br>
+        Druga<input type="number" id="druga" min="-9" max="9"><br>
+        Trzecia  <input type="number" id="trzecia" min="-9" max="9"><br>
+        Czwarta  <input type="number" id="czwarta" min="-9" max="9"><br>
+        Piąta  <input type="number" id="piata" min="-9" max="9"><br>
+        Szósta <input type="number" id="szosta" min="-9" max="9"><br>
+        Siódma<input type="number" id="siodma" min="-9" max="9"><br>
+    </form>
+    <input type="submit" onclick="largest()" value="Sprawdz">
+    <div id="Script"></div>
+</div>
+
+
+<script>
+    function largest() {
+
+        var one = document.getElementById("pierwsza");
+        var two = document.getElementById("druga");
+        var three = document.getElementById("trzecia");
+        var four = document.getElementById("czwarta");
+        var five = document.getElementById("piata");
+        var six = document.getElementById("szosta");
+        var seven = document.getElementById("siodma");
+
+        var array = [document.getElementById(pierwsza), document.getElementById(druga), document.getElementById(trzecia),
+            document.getElementById(czwarta), document.getElementById(piata), document.getElementById(szosta),
+            document.getElementById(siodma)];
+        var largest = array[9];
+        for (var i = 0; i < array.length; i++) {
+            if (largest < array[i]) {
+                largest = array[i]
+            }
+
+        }
+        Script.innerHTML=largest.value;
+
+
+    }
+</script>
+</body>
+</html>

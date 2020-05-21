@@ -1,0 +1,30 @@
+
+// Skrypt 4
+<!DOCTYPE html>
+
+<html>
+<body>
+<label for="x">Podaj pierwszą liczbę</label>
+<input type="text" id="x">
+<label for="y">Podaj drugą liczbę</label>
+<input type="text" id="y">
+<input type="submit" onclick="NWD()" value="Check">
+<div id="Script"></div>
+<script>
+    function NWD() {
+        var x = document.getElementById("x").value;
+        var y = document.getElementById("y").value;
+        while (x!= y) {
+            if (x > y) {
+                x = x - y;
+            } else {
+                y = y-x;
+            }
+        }
+        Script.innerHTML = x;
+    }
+</script>
+</body>
+</html>
+
+
